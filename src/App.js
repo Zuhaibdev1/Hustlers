@@ -1,12 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-import Header from './Components/Header';
+import { Switch, Route, Router } from "react-router-dom"
+import Navbar from './Components/Navbar';
+import Home from './Components/Home';
+import Product from './Components/Product';
 
 function App() {
   return (
     <>
-    <Header/>
-      <h1>Comming Soon</h1>
+    {/* <Router> */}
+
+        <Navbar />
+      <Switch>
+        <Route exact path="/" >
+          <Home />
+        </Route>
+        <Route exact path="/product" >
+          <Product />
+        </Route>
+      </Switch>
+        {/* </Router> */}
     </>
   );
 }
