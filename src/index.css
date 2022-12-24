@@ -12,23 +12,8 @@ code {
     monospace;
 }
 
-.background-video {
-  object-fit: cover;
-  background: fixed;
-  position:fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%
-}
-.nav-wrapper{
-  z-index: 2;
-}
+
 .sun-icon{
 color: orange;
 font-size: 1.5em;
-}
-.wrapper{
-  position: relative;
-  z-index: 3;
 }
